@@ -10,11 +10,9 @@ const Home=()=>{
     useEffect(()=>{
     console.log(title.current);
   
-  
-  
-     
+
+    
      //gsap animatin//
-     
       const tl = gsap.timeline();
       tl.from(".line span",1.8 , {
         y:100,
@@ -25,6 +23,7 @@ const Home=()=>{
           amount:0.3
         }
       });
+
       tl.to('.overlay-top',1.6,{
         height:0,
         ease:"expo.inOut",
